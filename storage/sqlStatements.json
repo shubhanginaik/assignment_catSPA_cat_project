@@ -1,0 +1,16 @@
+{
+    "getAll":["select number, name, breed, weightKg, yearOfBirth from cat"],
+    "get":[
+        "select number, name, breed, weightKg, yearOfBirth from cat",
+        "where number=?"
+    ],
+    "insert":[
+        "insert into cat (number, name, breed, weightKg, yearOfBirth)",
+        "values(?,?,?,?,?)"
+    ],
+    "update":[
+        "update cat set name=?, breed=?, weightKg=?, yearOfBirth=? ","where number=?"
+    ],
+    "remove":["delete from cat where number=?"],
+    "primaryKey":"number"
+}

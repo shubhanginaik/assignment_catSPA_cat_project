@@ -1,0 +1,32 @@
+{
+    "host":"localhost",
+    "port":"3306",
+    "admin":"controller",
+    "adminpassword":"secret",
+    "user":"james",
+    "userpassword":"Erwyy3cG",
+    "dropUser":true,
+    "debug":true,
+    "database":"catdb",
+    "tables":[
+        {
+            "tableName":"cat",
+            "columns":[
+                "number integer not null primary key",
+                "name varchar(15) not null",
+                "breed varchar(15) not null",
+                "weightKg integer not null",
+                "yearOfBirth integer not null"
+            ],
+            "data":[
+                [1,"Zebra", "bengal cat", 2,2014],
+                [2,"Pinki", "scottish fold", 1,2021],
+                [3,"Puma","alley cat",15,2005],
+                [7,"Hair","domesticus",4,2012],
+                [4,"Lion II","gigantus",10,2018],
+                [6,"Cute","longtail",6,2000],
+                [5,"Fluffy","couchPurrer",7,2015]
+            ]
+        }
+    ]
+}
